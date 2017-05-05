@@ -1,0 +1,52 @@
+/**
+ * Subscribe
+ *
+ * @section Modules
+ * @author ljd
+ */
+.subscribe {
+	padding: spacer-size(1) 0;
+	color: $color-grey-medium;
+	text-align: center;
+
+	@include media(tabletV) {
+		padding: spacer-size(2) 0;
+	}
+}
+
+.subscribe__desc {
+	margin: 0;
+
+	@include media(tabletV) {
+		@include adjust-font-size-to(type-size(2), 4);
+	}
+}
+
+.subscribe__input {
+	margin-top: spacer-size(1);
+	padding: 0 spacer-size(0);
+	width: 100%;
+
+	@include adjust-font-size-to(type-size(0), 4);
+	text-align: center;
+
+	@include media(tabletV) {
+		margin-top: spacer-size(2);
+		@include adjust-font-size-to(type-size(2), 5);
+		text-align: left;
+	}
+
+	@include media(tabletH) {
+		width: 75%;
+	}
+}
+
+.subscribe__c2a {
+	margin-top: spacer-size(1);
+
+	@include media(tabletH) {
+		margin-top: spacer-size(2);
+		float: right;
+		width: 20%;
+	}
+}

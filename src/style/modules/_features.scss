@@ -1,0 +1,139 @@
+/**
+ * Features
+ *
+ * @section Modules
+ * @author ljd
+ */
+.features {
+	overflow: hidden; // Clearfix
+}
+
+.features__list {
+	@extend %list-helper;
+
+	@include grid-row();
+
+	li {
+		@include grid-col(12);
+
+		&:nth-child(1n+2) {
+			position: relative;
+
+			&:before {
+				@extend %pseudo-block;
+
+				width: 80%;
+				height: 1px;
+
+				position: absolute;
+				left: 10%;
+
+				background: $color-grey-medium;
+
+				border-radius: 2px;
+			}
+
+			&:before {
+				top: 0;
+			}
+		}
+
+		@include media(tabletV) {
+			@include grid-col(4);
+
+			&:nth-child(1n+2) {
+				&:before {
+					width: 2px;
+					height: auto;
+
+					top: 15%;
+					left: 0;
+					bottom: 20%;
+				}
+			}
+		}
+	}
+}
+
+.features__link {
+	display: block;
+
+	color: $color-grey-medium;
+}
+
+.features__item {
+	display: block;
+	padding: spacer-size(2) 0;
+
+	text-align: center;
+}
+
+.features__title,
+.features__desc,
+.features__arrow {
+	margin: spacer-size(1) 0;
+
+	@include media(tabletV) {
+		margin: spacer-size(2) 0;
+	}
+}
+
+.features__title {
+	@include adjust-font-size-to(type-size(1), 4);
+	font-weight: normal;
+
+	@include media(tabletH) {
+		@include adjust-font-size-to(type-size(2), 4);
+	}
+
+	@include media(desktop) {
+		@include adjust-font-size-to(type-size(4), 5);
+	}
+}
+
+.features__desc {
+	max-width: 10em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.features__arrow {
+	display: block;
+	width: spacer-size(0) + spacer-size(1);
+	height: spacer-size(0) + spacer-size(1);
+	margin-right: auto;
+	margin-left: auto;
+
+	position: relative;
+
+	background: $color-blue-brand;
+
+	border-radius: 100%;
+
+	&:before,
+	&:after {
+		@extend %pseudo-block;
+
+		height: spacer-size(0) * 1.2;
+		width: 3px;
+
+		position: absolute;
+		right: 30%;
+
+		background: $color-white;
+	}
+
+	&:before {
+		top: 50%;
+
+		transform-origin: center top;
+		transform: rotate(40deg) translateY(-1px);
+	}
+
+	&:after {
+		bottom: 50%;
+
+		transform-origin: center bottom;
+		transform: rotate(-40deg) translateY(1px);
+	}
+}

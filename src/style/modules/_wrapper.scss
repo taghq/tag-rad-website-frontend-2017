@@ -7,15 +7,15 @@
 .wrapper {
 	max-width: $site-max-width;
 	min-width: $site-min-width;
-	padding: 0 spacer-size(0);
+	padding: 0 spacer-size(1);
 	margin: 0 auto;
 
 	&:after {
 		@extend %clearfix;
 	}
 
-	@include media(tabletH) {
-		padding: 0 spacer-size(1);
+	@include media(tabletV) {
+		padding: 0 spacer-size(2);
 	}
 }
 

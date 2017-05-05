@@ -1,0 +1,85 @@
+/**
+ * Footer
+ *
+ * @section Modules
+ * @author ljd
+ */
+.footer {
+	padding: spacer-size(1) 0;
+
+	color: $color-white;
+
+	background: $color-grey-medium;
+
+	@include adjust-font-size-to(type-size(-1), 2.5);
+
+	@include media(mobileH) {
+		@include adjust-font-size-to(type-size(0), 3);
+	}
+
+	@include media(tabletV) {
+		padding: spacer-size(2) 0;
+
+		@include adjust-font-size-to(type-size(2), 4);
+	}
+}
+
+.footer__content {
+	&:after {
+		@extend %clearfix;
+	}
+}
+
+.footer__logo {
+	float: left;
+}
+
+.footer__social,
+.footer__contact {
+	float: right;
+	padding-left: spacer-size(1);
+
+	@include media(tabletV) {
+		padding-left: spacer-size(2);
+	}
+}
+
+.footer__title {
+	margin: 0;
+
+	font-size: inherit;
+	font-weight: normal;
+}
+
+.footer__social-list {
+	@extend %list-helper;
+
+	margin: spacer-size(0)/2 (- spacer-size(0) / 2) 0;
+	width: 8em;
+
+	li {
+		width: 33.333%;
+		float: left;
+		padding: 0 (spacer-size(0) / 2)
+	}
+
+	@include media(tabletV) {
+		margin-top: spacer-size(0);
+	}
+}
+
+.footer__social-img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.footer__contact {
+	p {
+		margin: 0;
+	}
+
+	a {
+		color: $color-white;
+	}
+}

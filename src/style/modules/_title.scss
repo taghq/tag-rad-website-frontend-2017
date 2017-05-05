@@ -1,0 +1,68 @@
+/**
+ * Title
+ *
+ * @section Modules
+ * @author ljd
+ */
+.title {
+	display: block;
+	padding-top: 80vw;
+	padding-bottom: spacer-size(3);
+	overflow: hidden;
+
+	text-align: center;
+	color: $color-yellow-brand;
+
+	background: $color-white center center no-repeat;
+	background-size: cover;
+
+	@include media(tabletV) {
+		padding-top: 25vw;
+	}
+}
+
+.title__content {
+	display: inline-block;
+	border: 5px solid $color-grey-dark;
+	padding: spacer-size(1);
+
+	@include adjust-font-size-to(type-size(1));
+	font-weight: normal;
+
+	@include media(tabletV) {
+		padding: spacer-size(2);
+
+		@include adjust-font-size-to(type-size(2));
+	}
+
+	@include media(tabletH) {
+		@include adjust-font-size-to(type-size(3));
+	}
+}
+
+
+
+// Modifiers
+.title--inverted {
+	color: $color-white;
+
+	background-color: $color-grey-medium;
+
+	.title__content {
+		border-color: $color-white;
+
+		background: $color-black-transparent;
+	}
+}
+
+.title--bg {
+	background-image:  url('/media/hero/bg-mobile.jpg');
+
+	@include media(tabletV) {
+		background-image: url('/media/hero/bg-desktop.jpg');
+	}
+}
+
+.title--compact {
+	padding: spacer-size(3) 0 0;
+}

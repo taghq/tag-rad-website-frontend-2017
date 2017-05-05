@@ -1,0 +1,41 @@
+/**
+ * text
+ *
+ * @section Modules
+ * @author ljd
+ */
+.text {
+	overflow: hidden;
+	padding: spacer-size(1) 0;
+
+	text-align: center;
+
+	@include media(tabletV) {
+		padding: spacer-size(2) 0;
+	}
+}
+
+.text__content {
+	text-align: left;
+
+	@include media(tabletH) {
+		columns: 2;
+		column-gap: spacer-size(2);
+	}
+}
+
+.text__c2a {
+	margin-top: spacer-size(1);
+
+	@include media(tabletV) {
+		margin-top: spacer-size(2);
+	}
+}
+
+
+// Modifiers
+.text--inverted {
+	color: $color-white;
+
+	background-color: $color-grey-medium;
+}

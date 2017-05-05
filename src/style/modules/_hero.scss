@@ -13,7 +13,7 @@
 
 	color: $color-white;
 
-	background: $color-grey-light url('/media/hero/bg-mobile.jpg') center center no-repeat;
+	background: $color-grey-medium url('/media/hero/bg-mobile.jpg') center center no-repeat;
 	background-size: cover;
 
 	@include media(tabletV) {
@@ -58,7 +58,7 @@
 	@include media(tabletV) {
 		margin-top: spacer-size(2);
 
-		@include adjust-font-size-to(type-size(2));
+		@include adjust-font-size-to(type-size(3));
 	}
 
 	>:first-child {

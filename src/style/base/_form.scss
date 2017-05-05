@@ -32,21 +32,23 @@ textarea {
 
 	@include adjust-font-size-to(modular-scale(0));
 	font-family: $font-stack-copy;
-	color: $color-black;
+	color: $color-grey-medium;
 
-	background: $color-white;
+	background: $color-grey-super-light;
 
 	appearance: none;
+	box-shadow: inset 0 0 0 3px $color-grey-medium;
 
-	::placeholder {
+	&::placeholder {
 		@include adjust-font-size-to(modular-scale(0));
-		color: $color-black;
+		color: $color-white;
 	}
 
 	&:focus {
 		outline: none;
 
-		box-shadow: 0 2px $color-black;
+		box-shadow: inset 0 0 0 3px $color-blue-brand;
+		transition: 0.2s;
 	}
 }
 input[type] { // Needs specificity to overwrite weird base styles in normalize

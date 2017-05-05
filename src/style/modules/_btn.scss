@@ -1,0 +1,86 @@
+/**
+ * Button
+ *
+ * @section Modules
+ * @author ljd
+ */
+.btn {
+	display: inline-block;
+	padding: 0 spacer-size(1);
+	margin: spacer-size(0) 0 0;
+	border: none;
+
+	@include adjust-font-size-to(type-size(1), 4);
+
+	color: $color-white;
+	text-align: center;
+
+	background: $color-blue-brand;
+
+	cursor: pointer;
+	transition: 0.3s $ease-out-quart;
+
+	@include media(tabletV) {
+		@include adjust-font-size-to(type-size(2), 5);
+	}
+
+	@include link-active {
+		color: $color-white;
+
+		background: lighten($color-blue-brand, 2);
+	}
+
+	&:active {
+		color: $color-white;
+
+		background: darken($color-blue-brand, 2);
+
+		transform: translateY(1px);
+	}
+}
+
+.btn__arrow {
+	display: inline-block;
+	width: spacer-size(1);
+	height: $base-line-height * 4;
+	margin-left: spacer-size(0);
+
+	position: relative;
+
+	vertical-align: top;
+
+	&:before,
+	&:after {
+		@extend %pseudo-block;
+
+		width: 3px;
+		height: spacer-size(0);
+		background: $color-white;
+
+		position: absolute;
+		right: 0;
+	}
+
+	&:before {
+		top: 50%;
+
+		transform-origin: top center;
+		transform: rotate(40deg) translateY(-1px);
+	}
+
+	&:after {
+		bottom: 50%;
+
+		transform-origin: bottom center;
+		transform: rotate(-40deg) translateY(1px);
+	}
+
+	@include media(tabletV) {
+		height: $base-line-height * 5;
+
+		&:before,
+		&:after {
+			height: spacer-size(0) * 1.5;
+		}
+	}
+}

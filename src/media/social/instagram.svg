@@ -1,0 +1,25 @@
+
+<svg width="43px" height="45px" viewBox="0 0 43 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,13.9975595 C0,6.26692087 6.27557862,0 13.990581,0 L29.009419,0 C36.7362035,0 43,6.26353246 43,13.9975595 L43,29.7191071 C43,37.4497458 36.7244214,43.7166667 29.009419,43.7166667 L0,43.7166667 L0,13.9975595 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Final-Landing" transform="translate(-1343.000000, -3627.000000)">
+            <g id="Social-Media-Icons" transform="translate(1223.000000, 3627.466667)">
+                <g id="Instagram" transform="translate(120.000000, 0.000000)">
+                    <g id="Rectangle-7">
+                        <use fill="#00BCD4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#FFFFFF" stroke-width="3" d="M1.5,42.2166667 L1.5,13.9975595 C1.5,7.0994447 7.09990871,1.5 13.990581,1.5 L29.009419,1.5 C35.9088349,1.5 41.5,7.09301857 41.5,13.9975595 L41.5,29.7191071 C41.5,36.617222 35.9000913,42.2166667 29.009419,42.2166667 L1.5,42.2166667 Z"></path>
+                    </g>
+                    <g id="Group-19" transform="translate(9.000000, 9.150000)" stroke="#FFFFFF">
+                        <rect id="Rectangle-9" stroke-width="2" x="1" y="1" width="24" height="24.4333333" rx="5"></rect>
+                        <ellipse id="Oval-2" stroke-width="2" cx="13" cy="14.2333333" rx="5" ry="5.08333333"></ellipse>
+                        <ellipse id="Oval-3" fill="#FFFFFF" cx="21" cy="5.08333333" rx="1" ry="1.01666667"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

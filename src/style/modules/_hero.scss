@@ -1,0 +1,75 @@
+/**
+ * Hero
+ *
+ * @section Modules
+ * @author ljd
+ */
+.hero {
+	height: 100vw / (1440/890);
+	height: 100vh;
+
+	position: relative;
+	z-index: $z-index-main;
+
+	color: $color-white;
+
+	background: $color-grey-light url('/media/hero/bg-mobile.jpg') center center no-repeat;
+	background-size: cover;
+
+	@include media(tabletV) {
+		background-image: url('/media/hero/bg-desktop.jpg');
+	}
+}
+
+.hero__content {
+	width: 100%;
+
+	position: absolute;
+	top: 50%;
+
+	transform: translateY(-50%);
+}
+
+.hero__gfx,
+.hero__text {
+	padding: spacer-size(1);
+
+	background: $color-black-transparent;
+
+	@include media(tabletV) {
+		padding: spacer-size(2);
+	}
+}
+
+.hero__gfx {
+	border: 5px solid $color-white;
+}
+
+.hero__img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.hero__text {
+	text-align: center;
+	margin-top: spacer-size(1);
+
+	@include media(tabletV) {
+		margin-top: spacer-size(2);
+
+		@include adjust-font-size-to(type-size(2));
+	}
+
+	>:first-child {
+		margin-top: 0;
+	}
+}
+
+.hero__arrow {
+	margin-bottom: spacer-size(1);
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}

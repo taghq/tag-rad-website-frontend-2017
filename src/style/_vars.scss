@@ -1,0 +1,72 @@
+/**
+* Variables
+*
+* Basic site wide variables. All variables used cross-modules should be placed here. Please use existing CSS naming conventions when naming variables in CSS (lowercase, dashes - see http://cssguidelin.es/#naming-conventions).
+*
+* @section Variables
+* @author ljd -- 33,41,45
+*/
+
+// Spacers
+$base-unit:                10px;
+$spacer-sizes:             ($base-unit, $base-unit * 2, $base-unit * 5, $base-unit * 10, $base-unit * 15, $base-unit * 20);
+@function spacer-size($index) {
+	@return nth($spacer-sizes, $index + 1);
+}
+
+// Type & rythm
+$em-base:                  18px;
+$base-line-height:         spacer-size(0);
+$type-sizes:               (14px, $em-base, 27px, 32px, 48px, 72px, 108px); // http://www.modularscale.com/?18,48&px&1.5
+@function px-to-em($size, $base: $em-base) {
+	@return $size / $base * 1em;
+}
+@function type-size($index, $base: $em-base) {
+	@return px-to-em(nth($type-sizes, $index + 2), $base); // Make type-size(0) === $em-base
+}
+
+// Z-index
+$z-index-main:             100;
+$z-index-header:           200;
+$z-index-drawer:           300;
+
+// Grid
+$grid-gutter:              30px;
+$grid-columns:             16;
+
+// Screen sizes (media queries)
+$site-min-width:           280px;
+$site-max-width:           1080px;
+$site-max-width-wide:      1440px;
+
+// Colors
+$color-white:              rgb(255, 255, 255);
+$color-black-true:         rgb(0, 0, 0);
+
+$color-black:              rgb(18, 18, 18);
+$color-black-transparent:  rgba($color-black, 0.5);
+$color-grey-dark:          rgb(84, 84, 84);
+$color-grey-light:         rgb(195, 195, 195);
+
+$color-yellow-brand:       rgb(255, 193, 7);
+$color-yellow-warning:     rgb(252, 198, 100);
+
+$color-blue-brand:         rgb(0, 188, 212);
+
+$color-facebook:           rgb(59, 89, 152);
+$color-twitter:            rgb(0, 172, 237);
+$color-instagram:          rgb(103, 81, 68);
+$color-youtube:            rgb(196, 48, 43);
+
+// Font
+$font-stack-copy:          'Nunito', 'Avenir', 'Gibson', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-stack-headers:       $font-stack-copy;
+$font-stack-mono:          'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+
+// Transitions
+$transition-content:       0.35s $ease-in-out-quart;
+$loader-duration-appear:   1.5s;
+
+$footer-opacity:           0.5;
+
+$border-buffer:            100px;

@@ -1,0 +1,35 @@
+/**
+* Document
+ *
+ * Base document layout and setup.
+ *
+ * @section Base
+ * @author ljd
+ */
+* {
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+html,
+body {
+	overflow-x: hidden;
+
+	min-width: $site-min-width;
+}
+html {
+	@include establish-baseline();
+
+	min-height: 100%;
+
+	position: relative;
+
+	font-family: $font-stack-copy;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	color: $color-grey-dark;
+
+	-webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,14 @@
+{
+	"env": {
+		"browser": false
+	},
+	"globals": {
+		"isProduction": true,
+		"process": true,
+		"require": true,
+		"console": true
+	},
+	"rules": {
+		"no-console": 0
+	}
+}

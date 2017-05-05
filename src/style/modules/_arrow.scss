@@ -1,0 +1,45 @@
+/**
+ * Arrow
+ *
+ * @section Modules
+ * @author ljd
+ */
+.arrow {
+	display: block;
+	width: spacer-size(2);
+	height: spacer-size(2);
+
+	position: relative;
+
+	border: 3px solid $color-white;
+	border-radius: 100%;
+		box-shadow: 0 2px 1px rgba($color-black, 0.3);
+
+	&:before,
+	&:after {
+		@extend %pseudo-block;
+
+		width: spacer-size(1);
+		height: 3px;
+
+		position: absolute;
+		top: 65%;
+
+		background: $color-white;
+		box-shadow: 0 2px 1px rgba($color-black, 0.3);
+	}
+
+	&:before {
+		right: 50%;
+
+		transform-origin: right center;
+		transform: rotate(40deg);
+	}
+
+	&:after {
+		left: 50%;
+
+		transform-origin: left center;
+		transform: rotate(-40deg);
+	}
+}

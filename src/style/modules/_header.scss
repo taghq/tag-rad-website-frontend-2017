@@ -1,0 +1,68 @@
+/**
+ * Header
+ *
+ * @section Modules
+ * @author ljd
+ */
+.header {
+	padding: spacer-size(0) 0;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: $z-index-header;
+
+	background: $color-black-transparent;
+}
+
+.header__logo,
+.header__logo-img {
+	display: block;
+	width: spacer-size(2);
+	height: spacer-size(2);
+
+	float: left;
+}
+
+.header__nav-toggle {
+	display: block;
+	width: spacer-size(2);
+	height: spacer-size(2);
+	float: right;
+
+	position: relative;
+
+}
+
+.header__nav-toggle-gfx {
+	&,
+	&:before,
+	&:after {
+		width: 40px;
+		height: 4px;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		background: $color-blue-brand;
+
+		border-radius: 2px;
+
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	&:before,
+	&:after {
+		@extend %pseudo-block;
+	}
+
+	&:before {
+		margin-top: -8px;
+	}
+
+	&:after {
+		margin-top: 8px;
+	}
+}

@@ -30,7 +30,7 @@
 	font-weight: normal;
 
 	@include media(tabletV) {
-		padding: spacer-size(2);
+		padding: spacer-size(1)*2 spacer-size(2);
 	}
 }
 
@@ -43,11 +43,11 @@
 	@include adjust-font-size-to(type-size(1));
 
 	@include media(tabletV) {
-		@include adjust-font-size-to(type-size(2));
+		@include adjust-font-size-to(type-size(3));
 	}
 
 	@include media(tabletH) {
-		@include adjust-font-size-to(type-size(3));
+		@include adjust-font-size-to(type-size(4));
 	}
 }
 
@@ -55,7 +55,7 @@
 
 // Modifiers
 .title--inverted {
-	color: $color-white;
+	// color: $color-white;
 
 	background-color: $color-grey-medium;
 

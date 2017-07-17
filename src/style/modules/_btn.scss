@@ -9,10 +9,13 @@
 	padding: 0 spacer-size(1);
 	margin: spacer-size(0) 0 0;
 	border: none;
-
-	@include adjust-font-size-to(type-size(1), 4);
+	height: $base-line-height * 4;
 
 	color: $color-white;
+	font-family: $font-stack-headers;
+	font-size: type-size(1);
+	font-weight: 700;
+	line-height: $base-line-height * 4 * $header-line-height-mult;
 	text-align: center;
 
 	background: $color-blue-brand;
@@ -21,7 +24,9 @@
 	transition: 0.3s $ease-out-quart;
 
 	@include media(tabletV) {
-		@include adjust-font-size-to(type-size(2), 5);
+		height: $base-line-height * 5;
+
+		line-height: $base-line-height * 5 * $header-line-height-mult;
 	}
 
 	@include link-active {

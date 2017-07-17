@@ -62,8 +62,9 @@ $color-instagram:          rgb(103, 81, 68);
 $color-youtube:            rgb(196, 48, 43);
 
 // Font
+$header-line-height-mult:  4.7 / 4; // Visually align badly aligned font
 $font-stack-copy:          'Nunito', 'Avenir', 'Gibson', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$font-stack-headers:       $font-stack-copy;
+$font-stack-headers:       'maskoolinregular', 'Maskoolin Regular', 'Maskoolin', 'Impact', 'Haettenschweiler', 'Franklin Gothic Bold', 'Charcoal', 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', $font-stack-copy;
 $font-stack-mono:          'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 
 // Transitions

@@ -39,17 +39,30 @@
 	@include media(tabletV) {
 		padding: spacer-size(2);
 	}
+
+	@media screen and (min-aspect-ratio: 2/1) {
+		padding: spacer-size(1);
+	}
 }
 
 .hero__gfx, {
 	border: 5px solid $color-white;
+
+	@media screen and (min-aspect-ratio: 2/1) {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	@media screen and (min-aspect-ratio: 3/1) {
+		width: 66%;
+	}
 }
 
 .hero__img {
 	display: block;
 	width: 90%;
 	height: auto;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 .hero__text {
@@ -60,6 +73,11 @@
 		margin-top: spacer-size(2);
 
 		@include adjust-font-size-to(type-size(3));
+	}
+
+	@media screen and (min-aspect-ratio: 2/1) {
+		margin-top: spacer-size(1);
+		@include adjust-font-size-to(type-size(0));
 	}
 
 	>:first-child {

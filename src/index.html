@@ -59,6 +59,11 @@
 
 
 	<!-- DRAWER -->
+	<!--
+		The drawer is structurally the same on all pages,
+		although nav links representing the active page should
+		have the `nav__link--active` class.
+	-->
 	<aside class="drawer">
 		<div class="drawer__content">
 			<div class="wrapper wrapper--wide">
@@ -168,9 +173,9 @@
 			-->
 			<header class="title title--inverted title--bg" style="background-image: url(/media/hero/bg-desktop.jpg)">
 				<div class="title__content">
-					<h2 class="title__text">
+					<h1 class="title__text">
 						History
-					</h2>
+					</h1>
 				</div>
 			</header>
 			<!-- /TITLE -->
@@ -211,9 +216,9 @@
 			-->
 			<header class="title title--compact" style="background-image: url(/media/title/bg-history.jpg)">
 				<div class="title__content">
-					<h2 class="title__text">
+					<h1 class="title__text">
 						Subscribe
-					</h2>
+					</h1>
 				</div>
 			</header>
 			<!-- /TITLE -->
@@ -345,7 +350,7 @@
 						</div>
 
 						<div class="hero__text">
-							<p>Our mission is to engage in a collective study, analysis and discussion about how to build  power in the city of Portland. Our strategy is to develop a “people’s platform.”</p>
+							<p>Want to stay informed about radical opportnities in Portland?  We’ll send you info on our events and updates about our cause.</p>
 						</div>
 					</div>
 				</div>
@@ -361,6 +366,9 @@
 
 
 		<!-- FOOTER -->
+		<!--
+			The footer is always the same across pages
+		-->
 		<footer class="footer">
 			<div class="wrapper wrapper--wide">
 				<div class="footer__content">
@@ -430,15 +438,24 @@
 
 
 			<!-- HERO -->
-			<section class="hero">
+			<!--
+				This hero is slightly different from the hero on the home pages,
+				as it contains text title, not the logo graphics, and more complex
+				content in the text section (text and form).
+			-->
+			<section class="hero hero--beta">
 				<div class="hero__content">
 					<div class="wrapper">
-						<figure class="hero__gfx">
-							<img class="hero__img" src="/media/logo/logo.svg" alt="RAD Logo" title="Radical Action Democracy" />
-						</figure>
+						<div class="hero__title title title--inline title--inverted">
+							<div class="title__content">
+								<h1 class="title__text">
+									Required reading
+								</h1>
+							</div>
+						</div>
 
 						<div class="hero__text">
-							<p>Our mission is to engage in a collective study, analysis and discussion about how to build  power in the city of Portland. Our strategy is to develop a “people’s platform.”</p>
+							<p>The following reading list, part case study, part history, was compiled by Radical Action for Democracy as an introduction to what we think are inspiring efforts in revolutionary, democratic movement building in the city. We’ve arranged the readings by topic. If you have any questions, comments or suggestions, we would love to hear from you. </p>
 						</div>
 					</div>
 				</div>
@@ -449,11 +466,143 @@
 
 
 
+			<!-- BLOCK-COPY -->
+			<section class="block-copy">
+				<div class="wrapper wrapper--wide">
+
+					<header class="block-copy__header">
+						<div class="block-copy__header-gfx">
+							<img class="block-copy__header-img" src="/media/block-copy/reading-list-logo.svg" alt="Radical Action for Democracy - The Reading List" title="Radical Action for Democracy - The Reading List" />
+						</div>
+					</header>
+
+					<section class="block-copy__section">
+						<h1 class="block-copy__title">Introduction</h1>
+
+						<div class="block-copy__text">
+							<p>In this essay, RAD’s own Johanna Brenner introduces the cases of Richmond, California and Barcelona, Spain, which are explored further in our reading list. She also proposes drafting a people’s platform and suggests how combining deep organizing with electoral politics can transform our cities from our home in Oregon to around the world.</p>
+						</div>
+
+						<a href="https://drive.google.com/file/d/0B2o0nbPMrfwab1BSYUdLeTBMOGM/view?usp=sharing" target="_blank" class="block-copy__link">“Building Power in the City,” Johanna Brenner</a>
+					</section>
+
+					<div class="title title--compact">
+						<div class="title__content">
+							<h1 class="title__text">
+								Section 1
+							</h1>
+						</div>
+					</div>
+
+					<section class="block-copy__section">
+						<h1 class="block-copy__title">Envisioning a Democratic City</h1>
+
+						<div class="block-copy__text">
+							<p><em>Because cities serve as the centers of global capital, they hold great potential as spaces of social struggle against capital, particularly by bringing participatory democracy to life. Social movements worldwide are challenging the ruling apparatus by democratizing power so it can be wielded for the needs of the many, instead of the few.  Social movements worldwide are inventing new strategies for challenging the ruling apparatus and democratizing government so power can be wielded for the needs of the many instead of the few.</em></p>
+							<p>Right to the City (RttC) evokes geographer David Harvey’s book, Rebel Cities, and calls for a movement that links intersectional, anti-gentrification struggles to other movements against economic and social oppression.   RttC envisions a national alliance built through shared principles and a common theory of change.</p>
+						</div>
+
+						<a href="http://righttothecity.org/about/mission-history/" target="_blank" class="block-copy__link">Right to the City (RttC)</a>
+
+						<div class="block-copy__text">
+							<p>YES Magazine offers ideas about transitional reforms that shift away from the market and toward building the commons, in the sense of creating democratic forms of governing, finance, and production. They are not reforms that are easily won, but they are not impossible either—and have been or are currently being implemented in at least one city.</p>
+						</div>
+
+						<a href="http://www.yesmagazine.org/new-economy/6-ways-were-already-leading-an-economic-revolution-20160907" target="_blank" class="block-copy__link">“Six Practical Steps Toward Building The Next System From the Ground Up”</a>
+					</section>
+
+					<section class="block-copy__section">
+						<h1 class="block-copy__title">Building Counter-power in Jackson Mississippi—Malcolm X Grassroots Movement</h1>
+
+						<div class="block-copy__text">
+							<p>This article traces the history and functioning of “The Jackson Plan” in Jackson, Mississippi, rooting it in slave-era resistance, civil-rights organizing, and grassroots disaster relief after Hurricane Katrina in 2005. The central element is a three-part plan of building people’s assemblies, a network of progressive candidates, and a “solidarity economy.” The aim is to develop dual power, meaning power outside the state while not ignoring opportunities within the state to negate repression, counter capital flight, and build the “commons” from healthcare and transportation to the democratic transformation of the economy. The strategy is being implemented through campaigns around youth education and skill-building, urban farming, worker organizing, and local elections.</p>
+						</div>
+
+						<a href="https://mxgm.org/the-jackson-plan-a-struggle-for-self-determination-participatory-democracy-and-economic-justice/" target="_blank" class="block-copy__link">The Jackson Plan</a>
+
+						<div class="block-copy__text">
+							<p>This article, written by activists in Barcelona En Comu, describes how democratic municipal movements can create links, share strategies, such as the feminization of politics, support other struggles, and build an international network.</p>
+						</div>
+
+						<a href="https://medium.com/@BComuGlobal/why-the-municipal-movement-must-be-internationalist-fc290bf779f3#.saiv1s7bb" target="_blank" class="block-copy__link">Why The Municipal Movement Must Be Internationalist</a>
+					</section>
+
+					<div class="title title--compact">
+						<div class="title__content">
+							<h1 class="title__text">
+								Section 2
+							</h1>
+						</div>
+					</div>
+
+					<section class="block-copy__section">
+						<h1 class="block-copy__title">Social Movements and City Politics</h1>
+
+						<div class="block-copy__text">
+							<p><em>These readings illustrate how progressive social movements in Barcelona, Spain, and Richmond, California, took power through the electoral process. It details how organizers built bases of support in the community, assembled coalitions, and decided on campaigns and platforms democratically, turning despair into hope. Significantly, these accounts tell their stories “warts and all,” examining the many challenges and setbacks they encountered, and how they tried to overcome them.</em></p>
+							<p>Barcelona en Comu: Activists in Barcelona share their strategy and structure for a democratic city including the use of neighborhood assemblies and democratic engagement with technology to draft a platform to gain power.</p>
+						</div>
+
+						<a href="https://barcelonaencomu.cat/sites/default/files/win-the-city-guide.pdf" target="_blank" class="block-copy__link">Barcelona en Comu</a>
+
+						<div class="block-copy__text">
+							<h3>Cities in Transition and Citizen Struggles</h3>
+							<p>This article offers some highlights from a conference where Spanish and French municipalist activists shared ideas about winning power and governing in radically democratic ways.</p>
+						</div>
+
+						<a href="http://commonstransition.org/common-space-for-exchange-cities-in-transition-and-citizen-struggles/" target="_blank" class="block-copy__link">Cities in Transition and Citizen Struggles</a>
+
+						<div class="block-copy__text">
+							<p>For further exploration of tools for democratic municipal movements, see the <a href="http://commonstransition.org/">Commons Transition Platform</a> which provides practical experiences and <a href="http://commonstransition.org/sansvid-test/">policy proposal</a> aimed toward a more egalitarian, just, and environmentally stable society. (The Commons means the collaborative stewardship of our shared resources.) </p>
+							<p>Also related to this type of work is <a href="http://tools.dcentproject.eu">D-CENT</a>, a European project for open, secure, tools for direct democracy and empowerment.</p>
+							<h3>Richmond Progressive Alliance</h3>
+							<p>For years dominated by a Chevron refinery that polluted the environment and politics, this  poor, multi-racial city of 100,000 people has been transformed by activists without electoral experience who defeated corporate money and entrenched city corruption to win power and institute progressive policies in their city. This collection of internal documents, from RPA’s first meeting notes and handmade flyers to the “People’s Congress” platform, is an inside look at how a scrappy, persistent group of devoted activists achieved their vision of a democratic city for the people.</p>
+						</div>
+
+						<a href="http://richmondprogressivealliance.net/docs/RPA_Origins.pdf" target="_blank" class="block-copy__link">Richmond Progressive Alliance- Origins</a>
+
+						<div class="block-copy__text">
+							<p>RPA member Mike Parker describes how the RPA cleaned up toxic sites, fought union busting, raised corporate taxes, required police to end their cooperation with ICE, reduced gun violence, banned the box on employment forms, decreased homelessness, hired a new police chief who focused on community policing, and provided assistance for worker-owned coops. But Chevron is always able to outspend the all-volunteer effort, and the RPA continues to face serious challenges from national policy to the pressures of a global economy. </p>
+						</div>
+
+						<a href="http://richmondprogressivealliance.net/docs/RPA%20in%20Social%20Policy%20magaziine%20summer%2013.pdf" target="_blank" class="block-copy__link">Richmond Progressive Alliance- Mike Parker</a>
+					</section>
+
+					<div class="title title--compact">
+						<div class="title__content">
+							<h1 class="title__text">
+								Section 3
+							</h1>
+						</div>
+					</div>
+
+					<section class="block-copy__section">
+						<h1 class="block-copy__title">A Just Transition to a Sustainable City</h1>
+
+						<div class="block-copy__text">
+							<p>A Vision of Cooperation Jackson and the Our Power Campaign to make Jackson (MS) a “Sustainable City.”</p>
+						</div>
+
+						<a href="http://www.cooperationjackson.org/blog/2015/11/10/the-jackson-just-transition-plan" target="_blank" class="block-copy__link">The Jackson Just Transition Plan</a>
+
+						<a href="http://www.labor4sustainability.org/post/a-just-transition/" target="_blank" class="block-copy__link">Labor Network for Sustainability</a>
+					</section>
+
+
+				</div>
+			</section>
+			<!-- /BLOCK-COPY -->
+
+
+
 		</main>
 		<!-- /MAIN -->
 
 
 		<!-- FOOTER -->
+		<!--
+			The footer is always the same across pages
+		-->
 		<footer class="footer">
 			<div class="wrapper wrapper--wide">
 				<div class="footer__content">

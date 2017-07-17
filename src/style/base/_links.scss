@@ -18,6 +18,8 @@ a {
 	text-decoration: none;
 	vertical-align: baseline;
 
+	transition: 0.1s;
+
 	@include link-active {
 		color: $color-blue-brand;
 	}

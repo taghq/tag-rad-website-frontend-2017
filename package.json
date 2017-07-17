@@ -1,6 +1,6 @@
 {
   "name": "tag-rad-website-frontend-2017",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Frontend for website for RAD",
   "engine": "node 6.6.0",
   "scripts": {

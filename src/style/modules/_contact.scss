@@ -67,7 +67,7 @@ textarea.contact__textarea--error {
 
 	height: spacer-size(0) * (2 + 20);
 
-	@include placeholder {
+	&::placeholder {
 		padding-top: spacer-size(0);
 		padding-bottom: spacer-size(0);
 	}

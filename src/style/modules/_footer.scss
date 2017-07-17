@@ -34,6 +34,29 @@
 	float: left;
 }
 
+.footer__logo-full,
+.footer__logo-mark {
+	display: block;
+	width: auto;
+}
+
+.footer__logo-full {
+	display: none;
+	height: $base-line-height*8;
+
+	@include media(tabletV) {
+		display: block;
+	}
+}
+
+.footer__logo-mark {
+	height: $base-line-height*5;
+
+	@include media(tabletV) {
+		display: none;
+	}
+}
+
 .footer__social,
 .footer__contact {
 	float: right;
@@ -41,6 +64,13 @@
 
 	@include media(tabletV) {
 		padding-left: spacer-size(2);
+	}
+
+	@include media($mq-mobile-vertical - 10px, true) {
+		padding-left: 0;
+		clear: right;
+		padding-bottom: spacer-size(0);
+		width: 50%;
 	}
 }
 

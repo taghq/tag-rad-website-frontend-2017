@@ -172,8 +172,22 @@
 		<form method="get" action="/" class="subscribe">
 			<div class="wrapper">
 				<h4 class="subscribe__desc">Want to stay informed about radical opportunities in Portland?  We’ll send you info on our events and updates about our cause.</h4>
+
+				<!-- DEFAULT STATE --
 				<input type="email" placeholder="E-mail" class="subscribe__input" />
 				<button type="submit" class="subscribe__c2a btn">Submit</button>
+				<!-- DEFAULT STATE -->
+
+				<!-- FAIL STATE --
+				<div class="subscribe__error">Please fill out your e-mail address to subscribe to our newsletter!</div>
+				<input type="email" placeholder="E-mail" class="subscribe__input subscribe__input--error" />
+				<button type="submit" class="subscribe__c2a btn">Submit</button>
+				<!-- FAIL STATE -->
+
+				<!-- SUCCESS STATE -->
+				<div class="subscribe__success">Thank you! We've sent you a confirmation e-mail with your subscription details.</div>
+				<!-- SUCCESS STATE -->
+
 			</div>
 		</form>
 		<!-- /SUBSCRIBE -->

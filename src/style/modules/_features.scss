@@ -81,7 +81,7 @@
 .features__title {
 	@include adjust-font-size-to(type-size(1), 3);
 	font-family: $font-stack-headers;
-	font-weight: normal;
+	font-weight: 700;
 
 	@include media(tabletH) {
 		@include adjust-font-size-to(type-size(2), 4);

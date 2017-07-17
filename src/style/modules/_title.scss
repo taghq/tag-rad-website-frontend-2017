@@ -11,6 +11,7 @@
 	overflow: hidden;
 
 	font-family: $font-stack-headers;
+	font-weight: 700;
 	text-align: center;
 	color: $color-yellow-brand;
 
@@ -66,14 +67,12 @@
 	}
 }
 
-.title--bg {
-	background-image:  url('/media/hero/bg-mobile.jpg');
-
-	@include media(tabletV) {
-		background-image: url('/media/hero/bg-desktop.jpg');
-	}
-}
-
 .title--compact {
 	padding: spacer-size(3) 0 0;
+}
+
+.title--inline {
+	padding: 0;
+
+	background: transparent;
 }

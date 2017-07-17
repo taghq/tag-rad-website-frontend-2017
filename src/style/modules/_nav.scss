@@ -1,0 +1,35 @@
+/**
+ * Nav
+ *
+ * @section Modules
+ * @author ljd
+ */
+.nav {}
+
+.nav__list {
+	@extend %list-helper;
+}
+
+.nav__link {
+	display: block;
+	padding: spacer-size(0) 0;
+
+	@include adjust-font-size-to(type-size(1));
+	font-family: $font-stack-headers;
+	font-weight: 700;
+	color: $color-yellow-brand;
+
+	transition: 0.2s;
+
+	@include media(tabletV) {
+		@include adjust-font-size-to(type-size(3));
+	}
+
+	@include media(tabletH) {
+		@include adjust-font-size-to(type-size(4));
+	}
+}
+
+.nav__link--active {
+	color: $color-white
+}

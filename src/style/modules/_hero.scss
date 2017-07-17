@@ -41,7 +41,7 @@
 	}
 }
 
-.hero__gfx {
+.hero__gfx, {
 	border: 5px solid $color-white;
 }
 
@@ -73,4 +73,13 @@
 	position: absolute;
 	bottom: 0;
 	left: 50%;
+}
+
+
+
+// Modifiers
+.hero--beta {
+	.hero__text {
+		@include adjust-font-size-to(type-size(0));
+	}
 }

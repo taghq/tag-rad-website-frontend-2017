@@ -1,0 +1,33 @@
+/**
+ * Drawer
+ *
+ * @section Modules
+ * @author ljd
+ */
+.drawer {
+	position: fixed;
+	top: spacer-size(0) * 2 + spacer-size(2);
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: $z-index-drawer;
+
+	background: $color-black-transparent;
+
+	opacity: 0;
+	transform: translateX(-100%);
+	transition: 0.3s, transform 0s linear 0.3s;
+}
+
+.drawer__content {
+	overflow: auto;
+	padding: spacer-size(1) 0;
+}
+
+.drawer--open {
+	opacity: 1;
+	transform: translateX(0);
+	transition: 0.3s, transform 0s;
+
+	background: $color-black-transparent-dark;
+}

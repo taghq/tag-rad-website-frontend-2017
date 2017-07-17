@@ -8,16 +8,16 @@
 */
 
 // Spacers
-$base-unit:                10px;
-$spacer-sizes:             ($base-unit, $base-unit * 2, $base-unit * 5, $base-unit * 10, $base-unit * 15, $base-unit * 20);
+$base-unit:                     10px;
+$spacer-sizes:                  ($base-unit, $base-unit * 2, $base-unit * 5, $base-unit * 10, $base-unit * 15, $base-unit * 20);
 @function spacer-size($index) {
 	@return nth($spacer-sizes, $index + 1);
 }
 
 // Type & rythm
-$em-base:                  18px;
-$base-line-height:         spacer-size(0);
-$type-sizes:               (12px, $em-base, 20px, 24px, 30px, 36px, 48px, 72px, 108px);
+$em-base:                       18px;
+$base-line-height:              spacer-size(0);
+$type-sizes:                    (12px, $em-base, 20px, 24px, 30px, 36px, 48px, 72px, 108px);
 @function px-to-em($size, $base: $em-base) {
 	@return $size / $base * 1em;
 }
@@ -26,53 +26,54 @@ $type-sizes:               (12px, $em-base, 20px, 24px, 30px, 36px, 48px, 72px, 
 }
 
 // Z-index
-$z-index-main:             100;
-$z-index-header:           200;
-$z-index-drawer:           300;
+$z-index-main:                  100;
+$z-index-header:                200;
+$z-index-drawer:                300;
 
 // Grid
-$grid-gutter:              40px;
-$grid-columns:             12;
+$grid-gutter:                   40px;
+$grid-columns:                  12;
 
 // Screen sizes (media queries)
-$site-min-width:           280px;
-$site-max-width:           1080px;
-$site-max-width-wide:      1440px;
+$site-min-width:                280px;
+$site-max-width:                1080px;
+$site-max-width-wide:           1440px;
 
 // Colors
-$color-white:              rgb(255, 255, 255);
-$color-black-true:         rgb(0, 0, 0);
+$color-white:                   rgb(255, 255, 255);
+$color-black-true:              rgb(0, 0, 0);
 
-$color-black:              rgb(18, 18, 18);
-$color-black-transparent:  rgba($color-black, 0.5);
+$color-black:                   rgb(18, 18, 18);
+$color-black-transparent:       rgba($color-black, 0.5);
+$color-black-transparent-dark:  rgba($color-black, 0.9);
 
-$color-grey-dark:          rgb(84, 84, 84);
-$color-grey-medium:        rgb(108, 108, 108);
-$color-grey-light:         rgb(195, 195, 195);
-$color-grey-super-light:   rgb(235, 235, 235);
+$color-grey-dark:               rgb(84, 84, 84);
+$color-grey-medium:             rgb(108, 108, 108);
+$color-grey-light:              rgb(195, 195, 195);
+$color-grey-super-light:        rgb(235, 235, 235);
 
-$color-yellow-brand:       rgb(255, 193, 7);
-$color-yellow-warning:     rgb(252, 198, 100);
+$color-yellow-brand:            rgb(255, 193, 7);
+$color-yellow-warning:          rgb(252, 198, 100);
 
-$color-red-warning:        rgb(252, 48, 48);
+$color-red-warning:             rgb(252, 48, 48);
 
-$color-blue-brand:         rgb(0, 188, 212);
+$color-blue-brand:              rgb(0, 188, 212);
 
-$color-facebook:           rgb(59, 89, 152);
-$color-twitter:            rgb(0, 172, 237);
-$color-instagram:          rgb(103, 81, 68);
-$color-youtube:            rgb(196, 48, 43);
+$color-facebook:                rgb(59, 89, 152);
+$color-twitter:                 rgb(0, 172, 237);
+$color-instagram:               rgb(103, 81, 68);
+$color-youtube:                 rgb(196, 48, 43);
 
 // Font
-$header-line-height-mult:  4.7 / 4; // Visually align badly aligned font
-$font-stack-copy:          'Nunito', 'Avenir', 'Gibson', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$font-stack-headers:       'maskoolinregular', 'Maskoolin Regular', 'Maskoolin', 'Impact', 'Haettenschweiler', 'Franklin Gothic Bold', 'Charcoal', 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', $font-stack-copy;
-$font-stack-mono:          'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+$header-line-height-mult:       4.7 / 4; // Visually align badly aligned font
+$font-stack-copy:               'Nunito', 'Avenir', 'Gibson', 'Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-stack-headers:            'maskoolinregular', 'Maskoolin Regular', 'Maskoolin', 'Impact', 'Haettenschweiler', 'Franklin Gothic Bold', 'Charcoal', 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', $font-stack-copy;
+$font-stack-mono:               'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 
 // Transitions
-$transition-content:       0.35s $ease-in-out-quart;
-$loader-duration-appear:   1.5s;
+$transition-content:            0.35s $ease-in-out-quart;
+$loader-duration-appear:        1.5s;
 
-$footer-opacity:           0.5;
+$footer-opacity:                0.5;
 
-$border-buffer:            100px;
+$border-buffer:                 100px;

@@ -17,7 +17,8 @@ const hasKeyDown = 'onkeydown' in document;
 
 const DEFAULTS = {
 	fps: 60,
-	timeout: 200
+	timeout: 200,
+	passive: true
 };
 
 
@@ -153,8 +154,10 @@ export default class ScrollListener {
 	 * @param {object} event
 	 */
 	_addListeners(element = document) {
+		let { passive } = this.options;
+
 		let syntheticListener = event => this._start(event);
-		element.addEventListener('syntheticScroll', syntheticListener, { passive: true });
+		element.addEventListener('syntheticScroll', syntheticListener, { passive });
 		this._internalListeners.push({
 			element: element,
 			type: 'synthetic',
@@ -164,7 +167,7 @@ export default class ScrollListener {
 		let loadListener = event => setTimeout(() => {
 			this._start(event);
 		}, 500);
-		window.addEventListener('load', loadListener, { passive: true });
+		window.addEventListener('load', loadListener, { passive });
 		this._internalListeners.push({
 			element: window,
 			type: 'load',
@@ -172,7 +175,7 @@ export default class ScrollListener {
 		});
 
 		let scrollListener = event => this._start(event);
-		element.addEventListener('scroll', scrollListener, { passive: true });
+		element.addEventListener('scroll', scrollListener, { passive });
 		this._internalListeners.push({
 			element: element,
 			type: 'scroll',
@@ -181,7 +184,7 @@ export default class ScrollListener {
 
 		if (hasWheelEvent) {
 			let wheelListener = event => this._start(event);
-			element.addEventListener('wheel', wheelListener, { passive: true });
+			element.addEventListener('wheel', wheelListener, { passive });
 			this._internalListeners.push({
 				element: element,
 				type: 'wheel',
@@ -191,7 +194,7 @@ export default class ScrollListener {
 
 		if (hasMouseWheelEvent) {
 			let mouseWheelListener = event => this._start(event);
-			element.addEventListener('mousewheel', mouseWheelListener, { passive: true });
+			element.addEventListener('mousewheel', mouseWheelListener, { passive });
 			this._internalListeners.push({
 				element: element,
 				type: 'mousewheel',
@@ -201,7 +204,7 @@ export default class ScrollListener {
 
 		if (hasTouch) {
 			let touchStartListener = event => this._start(event);
-			element.addEventListener('touchstart', touchStartListener, { passive: true });
+			element.addEventListener('touchstart', touchStartListener, { passive });
 			this._internalListeners.push({
 				element: element,
 				type: 'touchstart',
@@ -209,7 +212,7 @@ export default class ScrollListener {
 			});
 
 			let touchMoveListener = event => this._start(event);
-			element.addEventListener('touchmove', touchMoveListener, { passive: true });
+			element.addEventListener('touchmove', touchMoveListener, { passive });
 			this._internalListeners.push({
 				element: element,
 				type: 'touchmove',
@@ -242,7 +245,7 @@ export default class ScrollListener {
 
 		if (hasKeyDown) {
 			let keyDownListener = event => this._start(event);
-			element.addEventListener('keydown', keyDownListener, { passive: true });
+			element.addEventListener('keydown', keyDownListener, { passive });
 			this._internalListeners.push({
 				element: element,
 				type: 'keydown',

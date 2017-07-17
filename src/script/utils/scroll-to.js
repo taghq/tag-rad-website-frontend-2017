@@ -21,7 +21,7 @@ const spring = new Spring({
  */
 let listener;
 document.addEventListener('DOMContentLoaded', () => {
-	listener = new ScrollListener({ id: 'koa-scroll-to' });
+	listener = new ScrollListener({ id: 'koa-scroll-to', passive: false });
 	listener.on(event => isAnimatingScroll() === true && event.originalEvent.preventDefault());
 });
 

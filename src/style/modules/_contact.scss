@@ -12,6 +12,11 @@
 	@include media(tabletV) {
 		padding: spacer-size(2) 0;
 	}
+
+	@include media(tabletH) {
+		width: 75%;
+		margin: 0 auto;
+	}
 }
 
 .contact__desc {
@@ -37,10 +42,6 @@
 
 		@include adjust-font-size-to(type-size(2), 5);
 		text-align: left;
-	}
-
-	@include media(tabletH) {
-		width: 75%;
 	}
 }
 

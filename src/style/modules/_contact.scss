@@ -1,10 +1,10 @@
 /**
- * Subscribe
+ * Contact
  *
  * @section Modules
  * @author ljd
  */
-.subscribe {
+.contact {
 	padding: spacer-size(1) 0;
 	color: $color-grey-medium;
 	text-align: center;
@@ -14,7 +14,7 @@
 	}
 }
 
-.subscribe__desc {
+.contact__desc {
 	margin: 0;
 
 	@include media(tabletV) {
@@ -22,7 +22,8 @@
 	}
 }
 
-.subscribe__input {
+.contact__input,
+.contact__textarea {
 	margin-top: spacer-size(1);
 	padding: 0 spacer-size(0);
 	width: 100%;
@@ -43,23 +44,48 @@
 	}
 }
 
-input.subscribe__input--error {
+input.contact__input--error,
+textarea.contact__textarea--error {
 	box-shadow: inset 0 0 0 3px $color-red-warning;
 }
 
-.subscribe__error,
-.subscribe__success {
+.contact__input--small {
+	@include media(tabletV) {
+		width: calc(50% - 1em);
+		float: left;
+		margin-right: 2em;
+
+		+ .contact__input--small {
+			margin-right: 0;
+		}
+	}
+}
+
+.contact__textarea {
+	padding-top: spacer-size(0);
+	padding-bottom: spacer-size(0);
+
+	height: spacer-size(0) * (2 + 20);
+
+	@include placeholder {
+		padding-top: spacer-size(0);
+		padding-bottom: spacer-size(0);
+	}
+}
+
+.contact__error,
+.contact__success {
 	margin: spacer-size(1) 0 0;
 	padding: spacer-size(1) 0;
 }
 
-.subscribe__error {
+.contact__error {
 	color: $color-white;
 
 	background: $color-red-warning;
 }
 
-.subscribe__c2a {
+.contact__c2a {
 	margin-top: spacer-size(1);
 
 	@include media(tabletH) {
@@ -72,10 +98,10 @@ input.subscribe__input--error {
 
 
 // Modifiers
-.subscribe--transparent {
+.contact--transparent {
 	color: $color-white;
 
-	.subscribe__input {
+	.contact__input {
 		color: $color-white;
 
 		background: rgba($color-grey-super-light, 0.5);

@@ -235,13 +235,13 @@
 					<h4 class="subscribe__desc">Want to stay informed about radical opportunities in Portland?  We’ll send you info on our events and updates about our cause.</h4>
 
 					<!-- DEFAULT STATE -->
-					<input type="email" placeholder="E-mail" class="subscribe__input" />
+					<input type="email" placeholder="E-mail" class="subscribe__input" required />
 					<button type="submit" class="subscribe__c2a btn">Submit</button>
 					<!-- DEFAULT STATE -->
 
 					<!-- FAIL STATE --
 					<div class="subscribe__error">Please fill out your e-mail address to subscribe to our newsletter!</div>
-					<input type="email" placeholder="E-mail" class="subscribe__input subscribe__input--error" />
+					<input type="email" placeholder="E-mail" class="subscribe__input subscribe__input--error" required />
 					<button type="submit" class="subscribe__c2a btn">Submit</button>
 					<!-- FAIL STATE -->
 
@@ -351,6 +351,29 @@
 
 						<div class="hero__text">
 							<p>Want to stay informed about radical opportnities in Portland?  We’ll send you info on our events and updates about our cause.</p>
+
+							<!-- SUBSCRIBE -->
+							<!--
+								This subscribe form has the `subscribe--transparent` class.
+								It also doesn't have a wrapper inside of it.
+							-->
+							<form method="get" action="/" class="subscribe subscribe--transparent">
+								<!-- DEFAULT STATE -->
+								<input type="email" placeholder="E-mail" class="subscribe__input" required />
+								<button type="submit" class="subscribe__c2a btn">Submit</button>
+								<!-- DEFAULT STATE -->
+
+								<!-- FAIL STATE --
+								<div class="subscribe__error">Please fill out your e-mail address to subscribe to our newsletter!</div>
+								<input type="email" placeholder="E-mail" class="subscribe__input subscribe__input--error" />
+								<button type="submit" class="subscribe__c2a btn">Submit</button>
+								<!-- FAIL STATE -->
+
+								<!-- SUCCESS STATE --
+								<div class="subscribe__success">Thank you! We've sent you a confirmation e-mail with your subscription details.</div>
+								<!-- SUCCESS STATE -->
+							</form>
+
 						</div>
 					</div>
 				</div>
@@ -361,8 +384,56 @@
 
 
 
+			<!-- TITLE -->
+			<!--
+				This title is "compact" (smaller in height), and has a
+				background image.
+			-->
+			<header class="title title--compact">
+				<div class="title__content">
+					<h1 class="title__text">
+						Contact
+					</h1>
+				</div>
+			</header>
+			<!-- /TITLE -->
+
+
+
+			<!-- CONTACT -->
+			<form action="/" method="get" class="contact">
+				<div class="wrapper">
+					<h4 class="contact__desc">Want to stay informed about radical opportunities in Portland?  We’ll send you info on our events and updates about our cause.</h4>
+
+					<!-- DEFAULT STATE --
+					<input type="text" placeholder="First name" class="contact__input contact__input--small" required />
+					<input type="text" placeholder="Last name" class="contact__input contact__input--small" required />
+					<input type="email" placeholder="E-mail" class="contact__input" required />
+					<textarea class="contact__textarea" required placeholder="Tell us what's on your mind"></textarea>
+					<button type="submit" class="subscribe__c2a btn">Send</button>
+					<!-- DEFAULT STATE -->
+
+					<!-- FAIL STATE -->
+					<div class="contact__error">Please fill out your e-mail address to subscribe to our newsletter!</div>
+					<input type="text" placeholder="First name" class="contact__input contact__input--small contact__input--error" required />
+					<input type="text" placeholder="Last name" class="contact__input contact__input--small" required />
+					<input type="email" placeholder="E-mail" class="contact__input" required />
+					<textarea class="contact__textarea contact__textarea--error" required placeholder="Tell us what's on your mind"></textarea>
+					<button type="submit" class="subscribe__c2a btn">Send</button>
+					<!-- FAIL STATE -->
+
+					<!-- SUCCESS STATE --
+					<div class="contact__success">Thank you! We'll get back to you as soon as possible.</div>
+					<!-- SUCCESS STATE -->
+				</div>
+			</form>
+			<!-- /CONTACT -->
+
+
+
 		</main>
 		<!-- /MAIN -->
+
 
 
 		<!-- FOOTER -->
@@ -483,7 +554,7 @@
 				and links needs to be mixed and matched to fit the content.
 			-->
 			<section class="block-copy">
-				<div class="wrapper wrapper--wide">
+				<div class="wrapper">
 
 					<header class="block-copy__header">
 						<div class="block-copy__header-gfx">
